@@ -1,0 +1,12 @@
+.img-model{
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.modal-content{
+    border: solid 2px rgb(37, 194, 37);
+    border-radius: 10px;
+}
+p{
+    text-align: justify;
+}
