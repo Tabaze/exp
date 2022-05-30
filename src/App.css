@@ -22,6 +22,10 @@
   background: whitesmoke;
 }
 .home{
+<<<<<<< HEAD
   background: url('./Components/img/background1.png') no-repeat ;
+=======
+  background: url('./Components/img/background1.png') no-repeat fixed;
+>>>>>>> c21b31eb62911bafc5c773d5f63b7d085150075b
   background-size:cover ;
 }

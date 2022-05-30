@@ -11,6 +11,7 @@ class Sitetitle extends Component {
                     ground, or you can see other people's projects and vote for them
                     and why not contribute to them, so what are you waiting for?</p>
                 <button className='btn1'>Create new Project</button>
+                <button class="btn1">Create new Project</button>
                 <button class="btn2">How it works? <i Class='far fa-play-circle'></i></button>
                 <div class="video-container">
                     <span class="close">&#10006;</span>

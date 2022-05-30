@@ -76,6 +76,7 @@ const data={
             id:18,imgSrc:img3,titre:"Project name 4",
             disc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio atque dicta, repellendus suscipit voluptates laboriosam odit! Quod fugit quasi veritatis maxime vel, cumque excepturi odit?",pro:"60%"
         }
+<<<<<<< HEAD
     ],
     posts:[
         {
@@ -98,6 +99,8 @@ const data={
             id:5,imgSrc:img3,titre:"Project name 4",
             disc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio atque dicta, repellendus suscipit voluptates laboriosam odit! Quod fugit quasi veritatis maxime vel, cumque excepturi odit?",pro:"60%"
         }
+=======
+>>>>>>> c21b31eb62911bafc5c773d5f63b7d085150075b
     ]
 }
 
