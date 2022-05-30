@@ -1,0 +1,126 @@
+:root {
+    --Livvic: 'Livvic', cursive;
+    --Lexend: 'Lexend', cursive;
+}
+
+
+
+main .site-title {
+    height: 140vh;
+    display: flex;
+    justify-content: left;
+}
+
+main .site-title .site-background {
+    padding-top: 6%;
+    color: rgb(66, 60, 4);
+}
+
+
+/* -----------------Buttons--------------------- */
+.btn1 {
+    margin: 1rem 0.5rem 1.5rem 18%;
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: var(--Livvic);
+}
+
+.btn2 {
+    background: transparent;
+    border: 2px solid rgb(39, 39, 39);
+    color: rgb(39, 39, 39);
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: var(--Livvic);
+}
+
+.btn1:hover {
+    background: transparent;
+    border: 2px solid rgb(40, 226, 71);
+    color: rgb(39, 39, 39);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background: gray;
+    border: 2px solid rgb(39, 39, 39);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* --------------------Videos------------------- */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background-color: rgba(116, 185, 26, 0.452);
+}
+
+.video-container .close {
+    position: absolute;
+    color: #000;
+    top: 10%;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.video-container video {
+    width: 60%;
+    max-width: 100%;
+    transform: scale(0);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.video-container.show {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.video-container.show video {
+    transform: scale(1);
+}
+
+/* -------------------------Slogan------------------------ */
+.slogan {
+    margin: 12% 10% 3%;
+    width: 45%;
+    text-align: justify;
+    font-family: var(--Lexend);
+    font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1130px) {
+    .slogan {
+        margin: 5% 10% 3%;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+
+    .btn1,
+    .btn2 {
+        padding: 1rem;
+    }
+}
