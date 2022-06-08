@@ -1,0 +1,143 @@
+:root {
+    --nature: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    --midnight: #104f55;
+}
+
+.container {
+    width: 100%;
+    z-index: 1;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+.slick-active{
+    margin-right: 10px;
+}
+
+
+.fa-long-arrow-alt-left:before {
+    content: "\f30a";
+}
+
+.fa-long-arrow-alt-right:before {
+    content: "\f30b";
+}
+
+.fa-quote-left:before {
+    content: "\f10d";
+}
+
+.fa-quote-right:before {
+    content: "\f10e";
+}
+
+.fa-pull-left {
+    float: left;
+}
+
+.fa-pull-right {
+    float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+    margin-right: .3em;
+}
+
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+    margin-left: .3em;
+}
+
+.imgTop {
+    width: 100%;
+}
+
+.blog {
+    width: 1000px;
+    height: 1200px;
+}
+
+.blog-content {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    padding: 2px;
+    /* overflow: hidden; */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+.blog-title {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+.btn-blog {
+    padding: .1rem 1.5rem;
+    border: none;
+    background: var(--nature);
+    margin: 2%;
+    margin-left: 1%;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.btn-blog:hover {
+    cursor: pointer;
+}
+
+
+
+.progress {
+    margin: 1.5rem;
+    height: 1.2rem;
+    background-color: #b4b8bd;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #58b401d3 0%,
+            #9dad06 100%);
+    border-radius: 20px;
+    color: white;
+    box-shadow: 8 3px -5px;
+}
+
+main .blog-content span {
+    display: block;
+    text-align: right;
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+/* ------------------------Navigation---------------------- */
+
+
+@media only screen and (max-width: 520px) {
+    main .blog {
+        height: 125vh;
+    }
+}
