@@ -16,7 +16,7 @@
 .container .contactinfo
 {
   position: absolute;
-  top: 40px;
+  top: 20px;
   width: 350px;
   height: calc(100%-80px);
   background-color: #58b401d3;
