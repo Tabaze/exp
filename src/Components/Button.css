@@ -1,8 +1,10 @@
-:root{                  /* Le nom de groupe de variables */
-    --primary:#fff;             /* variable pour utiliser ce couleur pleusieurs fois */
+:root {
+    /* Le nom de groupe de variables */
+    --primary: #fff;
+    /* variable pour utiliser ce couleur pleusieurs fois */
 }
 
-.btn{
+.btn {
     padding: 8px 28px;
     border-radius: 5px;
     font-size: 15px;
@@ -14,20 +16,20 @@
     color: white;
 }
 
-.btn:hover{
+.btn:hover {
     color: green;
     background-color: white;
     border: 1px solid green;
     font-size: 16px;
 }
 
-.btn--primary{
+.btn--primary {
     background-color: var(--primary);
-    color:#242424;
+    color: #242424;
     border: 1px solid var(--primary);
 }
 
-.btn--outline{
+.btn--outline {
     background-color: green;
     color: #fff;
     padding: 8px 20px;
@@ -35,7 +37,7 @@
     transition: all 0.3s ease-out;
 }
 
-.btn--medium{
+.btn--medium {
     padding: 8px 20px;
     font-size: 20px;
 }
@@ -45,7 +47,8 @@
     font-size: 20px;
 }
 
-.btn--medium:hover, .btn--large:hover{
+.btn--medium:hover,
+.btn--large:hover {
     background: rgb(212, 211, 211);
     color: #242424;
     transition: all 0.3s ease-out;

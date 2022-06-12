@@ -12,9 +12,11 @@
     z-index: 9999;
     border-bottom: 0.1px solid rgba(0, 0, 0, 0.1);
 }
-.navbars.active{
+
+.navbars.active {
     display: none;
 }
+
 .navbar-containers {
     display: flex;
     justify-content: center;
@@ -22,6 +24,7 @@
     height: 80px;
     max-width: 1500px;
 }
+
 .navbar-logos {
     color: green;
     justify-self: start;
@@ -34,9 +37,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
-.navbar-logos:hover{
+
+.navbar-logos:hover {
     color: green;
 }
+
 .fa-firstdraft {
     margin-left: 0.5rem;
     font-size: 1.6rem;
@@ -56,6 +61,7 @@
     width: 60vw;
     justify-content: end;
     margin-right: 2rem;
+    margin-top: 15px;
 }
 
 .nav-items {
@@ -75,6 +81,7 @@
 .nav-links:hover {
     border-bottom: 4px solid green;
     color: green;
+    margin-top: -5px;
     transition: all 0.2s ease-out;
 }
 
@@ -89,6 +96,63 @@
 .menu-icons {
     display: none;
 }
+
+.profile_img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.pro:hover .dd_menu {
+    display: block;
+    margin-right: 60px;
+}
+
+.dd_menu {
+    /* position: absolute;
+    width: 4.5rem;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);*/
+    border-radius: 10px;
+    /*display: none; */
+    display: none;
+    margin-top: 0.2rem;
+    position: absolute;
+    right: -1rem;
+    background-color: #fff;
+    min-width: 150px;
+    z-index: 1;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dd_menu a {
+    /* margin-right: 1rem;
+    margin-bottom: 10px;
+    color: #868686; */
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poppins', 'sans-serif';
+    transition: .5s;
+    font-size: 1.1rem;
+}
+
+.dd_menu a:hover {
+    background: var(--nature);
+    color: #fff;
+}
+
+
+.dd_menu:before {
+    content: '';
+    position: absolute;
+    top: -23px;
+    right: 35px;
+    border: 12px solid;
+    border-color: transparent transparent #fff transparent;
+}
+
 
 @media screen and (max-width: 960px) {
     .NavbarItems {
@@ -148,7 +212,7 @@
     }
 
     .fa-times {
-        color:green;
+        color: green;
         font-size: 2rem;
     }
 

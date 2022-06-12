@@ -3,10 +3,8 @@ import './Contact.css';
 
 function Contact() {
   return (
-    <div className='contact'>
-    <div className='container' onLoad={()=>{
-      document.getElementById('nav').classList.remove('active')
-  }}>
+    <section className='contact'>
+    <div className='container'>
       <div className='contactinfo'>
         <div>
           <h2>Contact Us</h2>
@@ -28,6 +26,7 @@ function Contact() {
           <div className='inputebox w50'>
             <input type={'email'} required ></input>
             <span>Email Adress</span>
+            
           </div>
           <div className='inputebox w50'>
             <input type={'text'} required ></input>
@@ -43,7 +42,7 @@ function Contact() {
         </div>
       </div>
     </div>
-  </div>
+  </section>
   );
 }
 

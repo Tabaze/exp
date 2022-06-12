@@ -1,14 +1,19 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from './Button'
 import Dropdown from './Dropdown'
+import Cookies from 'universal-cookie';
+// import DropdownPro from './DropdownPro'
+import ProImage from './pages/img/ProPic.png'
 import './Navbar.css'
+import { refresh } from 'aos'
 
 function Navbar() {
     const [click, setClick] = useState(false)
     const [button, setButton] = useState(true)
-    const [dropdown,setDropdown]=useState(false)
-    
+    const [dropdown, setDropdown] = useState(false)
+    // const [dropdownPro, setDropdownPro] = useState(false)
+    const item_value = sessionStorage.getItem("pass");
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
 
@@ -19,6 +24,12 @@ function Navbar() {
         else {
             setDropdown(true);
         }
+        // if (window.innerWidth <= 960) {
+        //     setDropdownPro(false);
+        // }
+        // else {
+        //     setDropdownPro(true);
+        // }
     }
 
     const onMouseLeave = () => {
@@ -28,6 +39,12 @@ function Navbar() {
         else {
             setDropdown(false);
         }
+        // if (window.innerWidth <= 960) {
+        //     setDropdownPro(false);
+        // }
+        // else {
+        //     setDropdownPro(false);
+        // }
     }
 
     const showButton = () => {
@@ -41,13 +58,15 @@ function Navbar() {
 
     useEffect(() => {
         showButton()
-    },[])
+    }, [])
 
     window.addEventListener('resize', showButton);
 
     return (
         <>
-            <nav className="navbars" id='nav' >
+            <nav className="navbars" id='nav' onLoad={()=>{
+                
+            }}>
                 <div className="navbar-containers">
                     <Link to="/" className="navbar-logos" onClick={closeMobileMenu}>
                         Fund'Greenness
@@ -67,10 +86,10 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-items dropdowns' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                                Projects <i className='fas fa-caret-down'/>
+                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                                Projects <i className='fas fa-caret-down' />
                             </Link>
-                            {dropdown && <Dropdown/>}
+                            {dropdown && <Dropdown />}
                         </li>
                         <li className='nav-items'>
                             <Link to='/contact-us' className='nav-links' onClick={closeMobileMenu}>
@@ -83,9 +102,25 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline' onClick={()=>{
-                        document.getElementById('nav').classList.add('active')
-                    }}>LOGIN</Button>}
+
+                    {
+                        item_value.toString() === true.toString() ? <div className="pro">
+                            <img src={ProImage} className="profile_img" />
+                            <div className="dd_menu">
+                                <a href="#"><i className="fas fa-user"></i>&nbsp;&nbsp;My profile</a>
+                                <a href="#"><i className="fas fa-file"></i>&nbsp; &nbsp; Control projects</a>
+                                <a href="#"><i className="fas fa-cog"></i>&nbsp; &nbsp; Settings</a>
+                                <button onClick={() => {
+                                    sessionStorage.setItem("pass", false)
+                                    Cookies.remove("user-email")
+                                    Cookies.remove("user-login")
+                                    window.location = '/';
+                                }}><i className="fas fa-sign-out-alt"></i>&nbsp; &nbsp; Logout</button>
+                            </div>
+                        </div> : <Button buttonStyle='btn--outline' onClick={() => {
+                            document.getElementById('nav').classList.add('active')
+                        }} >LOGIN</Button>
+                    }
                 </div>
             </nav>
         </>

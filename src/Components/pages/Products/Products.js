@@ -16,9 +16,7 @@ const Products=()=>{
     AOS.init();
   },[]);  
   return(
-    <div onLoad={()=>{
-      document.getElementById('nav').classList.remove('active')
-  }}>
+    <div>
       <section className='py-4 py-lg-5 container box-container'>      
        <div className='row'>
         {data.cardData.map((item,index)=>
@@ -28,9 +26,9 @@ const Products=()=>{
                 <img src={item.imgSrc} alt={item.titre} />
                 <h3> {item.titre} </h3>
               <div className="icons">
-                <a className="fas fa-link" onClick={() => getData(item.imgSrc, item.titre, item.disc)}></a>
+                <a className="fas fa-info" onClick={() => getData(item.imgSrc, item.titre, item.disc)}></a>
                     <a href="#" className="fas fa-share"></a>
-                    <a href="#" className="fas fa-search"></a>
+                <a href="#" className="fas fa-details"></a>
                 </div>
             </div>
                 

@@ -11,9 +11,7 @@ const Home = () => {
     AOS.init();
   }, [])
   return (
-    <div className='home' onLoad={()=>{
-      document.getElementById('nav').classList.remove('active')
-  }}>
+    <div className='home'>
       <SiteTitle />
       <br />
       <h1 className='slider-title'>

@@ -1,0 +1,96 @@
+footer.footer {
+    height: 100%;
+    background: linear-gradient(90deg, #58b401d3 0%, #071302 100%);
+    position: relative;
+}
+
+footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*or 1fr 1fr 1fr 1fr  or 25% 25% 25% 25%*/
+}
+
+footer.footer .container>div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2 {
+    color: rgb(0, 0, 0);
+}
+
+footer.footer .container p {
+    font-family: var(--Lexend);
+}
+
+footer.footer .newsletter .form-element {
+    background: #000;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input {
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span {
+    color: white;
+    background: transparent;
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .follow div i {
+    color: #fff;
+    padding: 0 .4rem;
+    cursor: pointer;
+}
+
+footer.footer .rights {
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+footer.footer .move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span {
+    color: rgb(196, 187, 187);
+    font-size: 1.2rem;
+}
+
+footer.footer .move-up span:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 1130px) {
+
+    footer.footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    footer.footer .container>div {
+        padding: 1rem .9rem !important;
+    }
+
+    footer .rights {
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+}

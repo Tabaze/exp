@@ -9,17 +9,20 @@ import Login from './Components/pages/Login/Login'
 import Product from './Components/pages/Products/Products'
 import Contact from './Components/pages/Contact us/Contact'
 
+
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+        <div>
         <Routes>
-          <Route path='/' exact element={<Home />} />
+          <Route path='/' exact element={<Home />}  />
           <Route path='/log-in' exact element={<Login />} />
           <Route path='/expired-projects' exact element={<Product />} />
           <Route path='/contact-us' exact element={<Contact />} />
         </Routes>
+        </div>
       </Router>
     </>
   );

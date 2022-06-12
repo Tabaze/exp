@@ -41,9 +41,7 @@ function NewProject() {
   };
 
   return (
-    <section onLoad={()=>{
-      document.getElementById('nav').classList.remove('active')
-  }}>
+    <section>
       <div className='container'>
       <div className="mx-auto rounded-2xl bg-white pb-2 shadow-xl md:w-1/2">
       {/* Stepper */}

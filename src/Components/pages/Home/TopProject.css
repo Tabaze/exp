@@ -22,6 +22,13 @@
     margin-right: 10px;
 }
 
+/* .RM{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 92%;
+    left: 73%;
+} */
 
 .fa-long-arrow-alt-left:before {
     content: "\f30a";
@@ -93,11 +100,12 @@
     padding: .1rem 1.5rem;
     border: none;
     background: var(--nature);
-    margin: 2%;
-    margin-left: 1%;
+    margin-top: -10%;
+    margin-left: 3%;
     font-size: 0.9rem;
     border-radius: 0.2rem;
     box-shadow: 1px 1px 5px gray;
+    color: #044704;
 }
 
 .btn-blog:hover {
@@ -125,6 +133,7 @@
 main .blog-content span {
     display: block;
     text-align: right;
+    margin-top: 0.2rem;
     font-size: 0.8rem;
 }
 

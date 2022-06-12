@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   display: block;
   width: 100%;
@@ -110,7 +111,8 @@ ul {
     padding: 0;
     text-align: center;
   }
-  p{
+
+  p {
     padding: 5px;
   }
 }
@@ -168,12 +170,12 @@ ul {
 
   .slick-prev {
     width: 50px;
-      height: 50px;
-      background-color: rgb(217, 243, 224);
-      border-radius: 16px;
-      color: white;
-      margin-left: 1%;
-      top: 25%;
+    height: 50px;
+    background-color: rgb(217, 243, 224);
+    border-radius: 16px;
+    color: white;
+    margin-left: 1%;
+    top: 25%;
   }
 
   .slick-prev:hover,
@@ -199,4 +201,8 @@ ul {
   .slick-prev {
     left: -50px;
   }
+}
+
+.ftNEPa{
+  margin-top: 40px;
 }

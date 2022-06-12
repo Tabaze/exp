@@ -4,11 +4,11 @@
 }
 
 
-
 main .site-title {
     height: 140vh;
-    display: flex;
-    justify-content: left;
+    display: grid;
+    /* justify-content: left; */
+    grid-template-columns: 70% 30%;
 }
 
 main .site-title .site-background {
@@ -16,6 +16,16 @@ main .site-title .site-background {
     color: rgb(66, 60, 4);
 }
 
+.ilustr{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right:60px ;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 8px;
+    width: 35%;
+    background: transparent
+}
 
 /* -----------------Buttons--------------------- */
 .btn1 {
@@ -104,6 +114,9 @@ main .site-title .site-background {
     font-size: 1.8rem;
 }
 
+strong{
+    font-size: 2rem;
+}
 
 
 

@@ -9,6 +9,7 @@ import {
 } from "./common";
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
+import Axios from 'axios'
 
 export function SignupForm(props) {
   const { switchToSignin } = useContext(AccountContext);
@@ -16,6 +17,23 @@ export function SignupForm(props) {
   const [email,setEmail]=useState('');
   const [pass,setPass]=useState('');
   const [con,setCon]=useState('');
+  const submitReview=()=>{
+    Axios.post('http://localhost:3001/api/AddUser',{
+      name:username,
+      email:email,
+      pasword:pass
+    }).then((response)=>{
+      if(response.data==null)
+      alert('email or password wrong')
+      else
+      { 
+        if(response==true){
+        sessionStorage.setItem("pass",true);
+        window.location = '/';
+        }
+      } 
+    })
+  }
   return (
     <BoxContainer>
       <FormContainer>
@@ -34,12 +52,8 @@ export function SignupForm(props) {
       </FormContainer>
       <Marginer direction="vertical" margin={10} />
       <SubmitButton type="submit" onClick={()=>{
-          console.log(username)
-          console.log(email)
-          console.log(pass)
-          console.log(con)
           if(pass!==con)alert("Must be the same password")
-          else console.log("done")
+          else submitReview();
       }}>Signup</SubmitButton>
       <Marginer direction="vertical" margin="1em" />
       <MutedLink href="#">

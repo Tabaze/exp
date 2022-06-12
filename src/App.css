@@ -5,6 +5,7 @@
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
 }
+
 .contact {
   display: flex;
   justify-content: center;
@@ -13,8 +14,9 @@
   left: -20px;
   z-index: 0;
   background-color: white;
-   /* background-color: #378b29; */
+  /* background-color: #378b29; */
 }
+
 .contact::before {
   content: '';
   position: absolute;
