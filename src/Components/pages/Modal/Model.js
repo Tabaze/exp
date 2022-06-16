@@ -19,7 +19,7 @@ export default class Model extends Component {
                         <hr />
                         <p>{this.props.desc}</p>
                         <hr />
-                        <div>
+                        <div className='btns'>
                             <button  className="btn btn-primary b">Revive</button>
                             <button  className="btn btn-primary b">Share</button>
                         </div>

@@ -65,7 +65,7 @@ function Navbar() {
     return (
         <>
             <nav className="navbars" id='nav' onLoad={()=>{
-                
+                if(item_value==null)item_value=false
             }}>
                 <div className="navbar-containers">
                     <Link to="/" className="navbar-logos" onClick={closeMobileMenu}>
@@ -86,7 +86,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-items dropdowns' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='' className='nav-links' onClick={closeMobileMenu}>
                                 Projects <i className='fas fa-caret-down' />
                             </Link>
                             {dropdown && <Dropdown />}
@@ -103,24 +103,18 @@ function Navbar() {
                         </li>
                     </ul>
 
-                    {
-                        item_value.toString() === true.toString() ? <div className="pro">
-                            <img src={ProImage} className="profile_img" />
-                            <div className="dd_menu">
-                                <a href="#"><i className="fas fa-user"></i>&nbsp;&nbsp;My profile</a>
-                                <a href="#"><i className="fas fa-file"></i>&nbsp; &nbsp; Control projects</a>
-                                <a href="#"><i className="fas fa-cog"></i>&nbsp; &nbsp; Settings</a>
-                                <button onClick={() => {
-                                    sessionStorage.setItem("pass", false)
-                                    Cookies.remove("user-email")
-                                    Cookies.remove("user-login")
-                                    window.location = '/';
-                                }}><i className="fas fa-sign-out-alt"></i>&nbsp; &nbsp; Logout</button>
-                            </div>
-                        </div> : <Button buttonStyle='btn--outline' onClick={() => {
+                        {
+                          item_value !== null ? <div className="pro">
+                           <img src={ProImage} className="profile_img" />
+                             <div className="dd_menu">
+                                 <a href="#"><i className="fas fa-user"></i>&nbsp;&nbsp;My profile</a>
+                                 <a href="#"><i className="fas fa-file"></i>&nbsp; &nbsp; Control projects</a>
+                                 <a href="#"><i className="fas fa-cog"></i>&nbsp; &nbsp; Settings</a>
+                                 <a  href='#'><i  className="fas fa-sign-out-alt"></i>&nbsp; &nbsp; Logout</a>
+                             </div>
+                         </div> : button && <Button buttonStyle='btn--outline' onClick={() => {
                             document.getElementById('nav').classList.add('active')
-                        }} >LOGIN</Button>
-                    }
+                        }} >LOGIN</Button>}
                 </div>
             </nav>
         </>

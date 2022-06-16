@@ -21,7 +21,7 @@ main .site-title .site-background {
     top: 0;
     right: 0;
     margin-right:60px ;
-    box-shadow: 5px 5px 10px #000;
+    /* box-shadow: 5px 5px 10px #000; */
     border-radius: 8px;
     width: 35%;
     background: transparent

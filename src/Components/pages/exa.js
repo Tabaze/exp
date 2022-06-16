@@ -3,6 +3,7 @@ import img2 from './img/pic2.jpg'
 import img3 from './img/pic5.jpg'
 import img4 from './img/pic4.jpg'
 import img5 from "./img/pic3.jpg"
+import propic from "./img/ProPic.png"
 const data = {
     cardData: [
         {
@@ -81,23 +82,28 @@ const data = {
     posts: [
         {
             id: "PRG1", imgSrc: img1, titre: "Project name 1", date: "April 16, 2022",
+            proImg:propic,
             disc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio atque dicta, repellendus suscipit voluptates laboriosam odit! Quod fugit quasi veritatis maxime vel, cumque excepturi odit?", pro: "30%"
         },
         {
             id: "PRG2", imgSrc: img2, titre: "Project name 2", date: "April 16, 2022",
+            proImg:propic,
             disc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio atque dicta, repellendus suscipit voluptates laboriosam odit! Quod fugit quasi veritatis maxime vel, cumque excepturi odit?", pro: "50%"
         },
         {
             id: "PRG3", imgSrc: img3, titre: "Project name 3", date: "April 16, 2022",
+            proImg:propic,
             disc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio atque dicta, repellendus suscipit voluptates laboriosam odit! Quod fugit quasi veritatis maxime vel, cumque excepturi odit?"
             , pro: "60%"
         },
         {
             id: "PRG4", imgSrc: img4, titre: "Project name 4", date: "April 16, 2022",
+            proImg:propic,
             disc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio atque dicta, repellendus suscipit voluptates laboriosam odit! Quod fugit quasi veritatis maxime vel, cumque excepturi odit?", pro: "60%"
         },
         {
             id: "PRG5", imgSrc: img5, titre: "Project name 5", date: "April 16, 2022",
+            proImg:propic,
             disc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio atque dicta, repellendus suscipit voluptates laboriosam odit! Quod fugit quasi veritatis maxime vel, cumque excepturi odit?", pro: "60%"
         }
     ]

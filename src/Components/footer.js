@@ -1,12 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './footer.css'
+import { speed } from 'jquery'
+import { animate } from 'framer-motion'
 
-function footer() {
+function Footer() {
+    const top=()=>{
+        animate({scrollTop:1},{
+            scrollTop: 0
+        }, 1000)
+    }
     return (
         <>
             <footer className="footer">
-                <div className="container">
+                <div className="containerFooter">
                     <div className="about-us">
                         <h2>About us</h2>
                         <p> FundGreenness is a crowdfunding platform
@@ -19,7 +25,7 @@ function footer() {
                         <p>Stay update with our latest</p>
                         <div className="form-element">
                             {/* <form onSubmit={this.handleSubmit}> */}
-                            <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Email" /><span><i className="fas fa-chevron-right"></i></span>
+                            <input type="text" placeholder="Email" /><span><i className="fas fa-chevron-right"></i></span>
                                 {/* </form> */}
                         </div>
                     </div>
@@ -45,7 +51,7 @@ function footer() {
                         &nbsp; <a href="LegalPurpose.html">Legal purposes</a>
                     </h4>
                 </div>
-                <div className="move-up">
+                <div className="move-up" onClick={top}>
                     <span><i className="fas fa-arrow-circle-up fa-2x"></i></span>
                 </div>
             </footer>
@@ -53,4 +59,4 @@ function footer() {
     )
 }
 
-export default footer
+export default Footer
