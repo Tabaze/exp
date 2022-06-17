@@ -17,7 +17,7 @@ body {
 .card-wrapper {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 50px;
   padding: 0 10px;
   border-radius: 16px;
   box-sizing: border-box;
@@ -31,8 +31,8 @@ body {
 }
 
 .card {
-  width: 95%;
-  height: 100%;
+  width: 100%;
+  height: 80%;
   border-radius: 16px;
   cursor: pointer;
   position: relative;
@@ -46,8 +46,9 @@ body {
     height: 100%;
     z-index: 2;
     transition: .5s;
+    border-radius: 16px;
 
-    img {
+    .imgTop {
       border-radius: 16px;
       width: 100%;
       height: 100%;
@@ -55,7 +56,7 @@ body {
     }
 
     &:hover {
-      img {
+      .imgTop {
         opacity: .4;
         transition: .5s;
       }
@@ -72,8 +73,8 @@ body {
 .social-icons {
   border-radius: 16px;
   position: absolute;
-  top: 86%;
-  left: 50%;
+  top: 75%;
+  left: 45%;
   transform: translate(-50%, -50%);
   display: flex;
 }
@@ -100,7 +101,7 @@ ul {
   left: 0;
   background: transparent;
   width: 100%;
-  height: 270px;
+  height: 80%;
   text-align: justify;
   border-radius: 16px;
   padding: 10px;

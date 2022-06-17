@@ -67,7 +67,9 @@ footer.footer .move-up span {
     color: rgb(165, 151, 151);
     font-size: 1.2rem;
 }
-
+.footer.active {
+    display: none;
+}
 footer.footer .move-up span:hover {
     /* color: green; */
     font-size: 1.3rem;

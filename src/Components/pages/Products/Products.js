@@ -17,7 +17,10 @@ const Products=()=>{
   },[]);  
   return(
     <div>
-      <section className='py-4 py-lg-5 container box-container'>      
+      <section className='py-4 py-lg-5 container box-container' onLoad={()=>{
+      document.getElementById('nav').classList.remove('active')
+      document.getElementById('footer').classList.remove('active')
+    }}>      
        <div className='row'>
         {data.cardData.map((item,index)=>
               {

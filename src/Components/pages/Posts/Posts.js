@@ -3,7 +3,11 @@ import './Posts.css'
 import data from '../exa'
 function Posts() {
   return (
-    <main>
+    <main onLoad={()=>{
+      
+        document.getElementById('nav').classList.remove('active')
+        document.getElementById('footer').classList.remove('active')
+      }}>
         {data.posts.map((item,index)=>
               {
                 return(

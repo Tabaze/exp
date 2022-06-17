@@ -11,7 +11,7 @@ function Footer() {
     }
     return (
         <>
-            <footer className="footer">
+            <footer className="footer" id='footer'>
                 <div className="containerFooter">
                     <div className="about-us">
                         <h2>About us</h2>

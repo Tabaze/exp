@@ -11,7 +11,11 @@ const Home = () => {
     AOS.init();
   }, [])
   return (
-    <div className='home'>
+    <div className='home' onLoad={()=>{
+      
+      document.getElementById('nav').classList.remove('active')
+      document.getElementById('footer').classList.remove('active')
+    }}>
       <SiteTitle />
       <br />
       <h1 className='slider-title'>

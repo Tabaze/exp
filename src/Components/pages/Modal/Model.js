@@ -20,8 +20,8 @@ export default class Model extends Component {
                         <p>{this.props.desc}</p>
                         <hr />
                         <div className='btns'>
-                            <button  className="btn btn-primary b">Revive</button>
-                            <button  className="btn btn-primary b">Share</button>
+                            <button  className="btn post-btn b">Revive</button>
+                            <button  className="btn post-btn b">Share</button>
                         </div>
                     </div>
                 </div>

@@ -114,6 +114,7 @@ function Navbar() {
                              </div>
                          </div> : button && <Button buttonStyle='btn--outline' onClick={() => {
                             document.getElementById('nav').classList.add('active')
+                            document.getElementById('footer').classList.add('active')
                         }} >LOGIN</Button>}
                 </div>
             </nav>

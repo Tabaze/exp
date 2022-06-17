@@ -9,3 +9,10 @@
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+@media only screen and (max-width: 1130px) {
+    .slider-title{
+        font-size: 1.8rem;
+        margin-left: 20%;
+    }
+}

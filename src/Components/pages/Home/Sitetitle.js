@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import data from '../exa';
-import ilus from '../img/MicrosoftTeams-image.png'
+import ilus from '../img/MicrosoftTeams-image-removebg-preview.png'
 import './Sitetitle.css'
 
 class Sitetitle extends Component {
@@ -16,7 +16,7 @@ class Sitetitle extends Component {
             <button className="btn1">Create new Project</button>
             <button className="btn2">How it works? <i className='far fa-play-circle'></i></button>
           </div>
-          <img src={ ilus} className='ilustr'/>
+          <img src={ilus} className='ilustr'/>
         </section>
       </div>
     )

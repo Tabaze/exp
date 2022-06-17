@@ -23,6 +23,7 @@ function App() {
           <Route path='/log-in' exact element={<Login />} />
           <Route path='/expired-projects' exact element={<Product />} />
           <Route path='/contact-us' exact element={<Contact />} />
+          {/* <Route path='/completed-projects' exact element={<NewProject />}/> */}
         </Routes>
         </div>
         <Footer/>

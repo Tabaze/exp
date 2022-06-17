@@ -125,9 +125,18 @@ strong{
 
 @media only screen and (max-width: 1130px) {
     .slogan {
-        margin: 5% 10% 3%;
-        width: 80%;
+        margin: 15% 2% 3%;
+        width: 50%;
+        font-size: 1.3rem;
     }
+    .site-title{
+        background: #fff;
+    }
+
+    .btn1{
+        margin-left: 5%;
+    }
+    
 }
 
 @media only screen and (max-width: 890px) {
